@@ -83,7 +83,7 @@ const htmlMarkUp = images.map(({ preview, original, description }) =>
 </li>`
 ).join('');
 
-gallery.insertAdjacentHTML('beforeend', htmlMarkUp);
+gallery.insertAdjacentHTML("afterbegin", htmlMarkUp);
 
 gallery.addEventListener('click', (ev) => {
   ev.preventDefault();
